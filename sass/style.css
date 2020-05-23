@@ -135,13 +135,25 @@ header .navbar .navbar-nav .nav-item .nav-link {
 header .navbar .navbar-nav .nav-item .nav-link.quote {
   color: #fff;
   background-color: #25a7e0;
+  border: 2px solid #25a7e0;
   border-radius: 20px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+header .navbar .navbar-nav .nav-item .nav-link.quote:hover {
+  color: #25a7e0;
+  background-color: transparent;
 }
 header .navbar .navbar-nav .nav-item .nav-link.quote-with-fiverr {
   color: #fff;
   margin-left: 1.5rem;
   background-color: #87c540;
+  border: 2px solid #87c540;
   border-radius: 20px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+header .navbar .navbar-nav .nav-item .nav-link.quote-with-fiverr:hover {
+  color: #87c540;
+  background-color: transparent;
 }
 header .navbar .navbar-nav .nav-item .nav-link.active span {
   color: #0071bc;
@@ -243,15 +255,18 @@ Portfolio Style Start Here
 }
 .portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-inner .carousel-item img {
   border-radius: 0.25rem;
-  border: 5px solid #fff;
+  border: 7px solid #fff;
 }
 .portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-inner .carousel-item .carousel-caption {
   bottom: -50px;
   text-align: left;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   color: #4b4b4b;
   background-color: #fff;
-  box-shadow: 0 20px 40px 0 rgba(18, 193, 162, 0.15);
+  box-shadow: 5px 6px 10px 0px #797070;
+}
+.portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-inner .carousel-item .carousel-caption img {
+  border-radius: 1rem;
 }
 .portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-control-prev {
   right: 100%;

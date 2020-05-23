@@ -166,14 +166,30 @@ header {
           &.quote {
             color: $white;
             background-color: #25a7e0;
+            border: 2px solid #25a7e0;
             border-radius: $default-button-radius;
+            transition: color .2s $transition-timing-function,
+            background-color .2s $transition-timing-function,
+            border-color .2s $transition-timing-function;
+            &:hover {
+              color: #25a7e0;
+              background-color: transparent;
+            }
           }
 
           &.quote-with-fiverr {
             color: $white;
             margin-left: 1.5rem;
             background-color: #87c540;
+            border: 2px solid #87c540;
             border-radius: $default-button-radius;
+            transition: color .2s $transition-timing-function,
+            background-color .2s $transition-timing-function,
+            border-color .2s $transition-timing-function;
+            &:hover {
+              color: #87c540;
+              background-color: transparent;
+            }
           }
 
           &.active {
@@ -286,16 +302,19 @@ Portfolio Style Start Here
             .carousel-item {
               img {
                 border-radius: 0.25rem;
-                border: 5px solid $white;
+                border: 7px solid $white;
               }
 
               .carousel-caption {
                 bottom: -50px;
                 text-align: left;
-                border-radius: 0.5rem;
+                border-radius: 1rem;
                 color: $secondary-color;
                 background-color: $white;
-                box-shadow: $default-box-shadow;
+                box-shadow: 5px 6px 10px 0px #797070;
+                img {
+                  border-radius: 1rem;
+                }
               }
             }
           }
