@@ -5,6 +5,14 @@
   src: url("../fonts/Aachen BT Bold font.ttf");
 }
 @font-face {
+  font-family: "Aachen BT Roman";
+  src: url("../fonts/aachen_bt.ttf");
+}
+@font-face {
+  font-family: "Aachen BT";
+  src: url("../fonts/Aachen BT Bold font.ttf");
+}
+@font-face {
   font-family: "Arrus BT";
   src: url("../fonts/bitstream arrus bt.ttf");
 }
@@ -24,6 +32,10 @@ a {
 
 .font-achanbt {
   font-family: "Aachen BT";
+}
+
+.font-achanbt-regular {
+  font-family: "Aachen BT Roman";
 }
 
 .font-arrusbt {
@@ -50,6 +62,18 @@ a {
   font-size: 40px;
 }
 
+.font-size-55 {
+  font-size: 55px;
+}
+
+.font-size-50 {
+  font-size: 50px;
+}
+
+.font-size-28 {
+  font-size: 28px;
+}
+
 .brand-text {
   color: #0071bc;
 }
@@ -70,12 +94,12 @@ a {
   border: 2px solid;
   font-weight: 600;
   font-size: 1.2rem;
-  padding: 0.35rem 1.5rem;
-  border-radius: 20px;
+  padding: 0.45rem 1.7rem;
+  border-radius: 10px;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .btn-app.white {
-  color: #000;
+  color: #1a1a1a;
   border-color: #fff;
   background-color: #fff;
 }
@@ -104,6 +128,10 @@ a {
   box-shadow: 5px 6px 10px 0px #1e1a1a;
 }
 
+.text-shadow {
+  text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
 /*---------------------
 Header Style Start Here
 ---------------------*/
@@ -128,44 +156,41 @@ header .navbar.navbar-fixed-top .navbar-brand img {
 }
 header .navbar .navbar-nav .nav-item .nav-link {
   font-weight: 600;
-  padding: 0.18rem 1.5rem;
+  padding: 0.01rem 0.6rem;
   color: #1a1a1a;
   transition: all 0.35s ease-in-out;
 }
 header .navbar .navbar-nav .nav-item .nav-link.quote {
   color: #fff;
-  background-color: #25a7e0;
-  border: 2px solid #25a7e0;
-  border-radius: 20px;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  margin-left: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(to right, #24a4dd, #0477c0);
+  background: -webkit-linear-gradient(to right, #24a4dd, #0477c0);
+  transition: background 0.35s ease-in-out;
 }
 header .navbar .navbar-nav .nav-item .nav-link.quote:hover {
-  color: #25a7e0;
-  background-color: transparent;
+  background: linear-gradient(to right, #2091c2, #0567a5);
+  background: -webkit-linear-gradient(to right, #2091c2, #0567a5);
 }
 header .navbar .navbar-nav .nav-item .nav-link.quote-with-fiverr {
   color: #fff;
-  margin-left: 1.5rem;
-  background-color: #87c540;
-  border: 2px solid #87c540;
-  border-radius: 20px;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  margin-left: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(to right, #83c440, #46b848);
+  background: -webkit-linear-gradient(to right, #83c440, #46b848);
+  transition: background 0.35s ease-in-out;
 }
 header .navbar .navbar-nav .nav-item .nav-link.quote-with-fiverr:hover {
-  color: #87c540;
-  background-color: transparent;
-}
-header .navbar .navbar-nav .nav-item .nav-link.active span {
-  color: #0071bc;
-  border-bottom: 2px solid #0071bc;
+  background: linear-gradient(to right, #70a136, #338735);
+  background: -webkit-linear-gradient(to right, #70a136, #338735);
 }
 @media (max-width: 991px) {
   header .navbar .navbar-nav .nav-item .nav-link {
     margin-left: 0;
     display: inline-block;
   }
-  header .navbar .navbar-nav .nav-item .nav-link.quote {
-    margin-left: 1.5rem;
+  header .navbar .navbar-nav .nav-item .nav-link.quote, header .navbar .navbar-nav .nav-item .nav-link.quote-with-fiverr {
+    margin-left: 0.6rem;
     margin-bottom: 0.7rem;
   }
 }
@@ -186,15 +211,19 @@ Main Banner Style Start Here
 --------------------------*/
 .main-banner {
   background: url("../img/main-banner-bg.jpg") no-repeat center center;
-  padding: 120px 0;
+  padding: 100px 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.main-banner h1 {
-  font-size: 6vw;
+.main-banner h1.big-thing {
+  font-size: 7.6vw;
   font-family: "Aachen BT";
+}
+.main-banner .btn-view-our-work {
+  font-size: 30px;
+  padding: 0.2rem 3rem;
 }
 
 /*--------------------------
@@ -205,17 +234,22 @@ Company Overview Style Start Here
 -------------------------------*/
 .company-overview {
   background: url("../img/bg-company-overview.jpg") no-repeat center center;
-  padding: 120px 0;
+  padding: 100px 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+.company-overview .years-of-brilliance {
+  font-size: 30px;
+  padding: 0.2rem 3rem;
+}
 .company-overview h1 {
-  font-size: 40px;
-  font-family: "Aachen BT";
+  font-size: 50px;
+  font-family: "Aachen BT Roman";
 }
 .company-overview h6 {
+  font-size: 20px;
   font-family: "Arrus BT";
 }
 
@@ -227,7 +261,7 @@ Portfolio Style Start Here
 ------------------------*/
 .portfolio {
   background: url("../img/bg-portfolio.jpg") no-repeat center center fixed;
-  padding: 120px 0;
+  padding: 100px 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -241,6 +275,10 @@ Portfolio Style Start Here
   font-size: 18px;
   font-family: Roboto;
 }
+.portfolio .btn-portfolio {
+  font-size: 30px;
+  padding: 0.2rem 3rem;
+}
 .portfolio .portfolio-modal .modal-dialog {
   max-width: 100vw;
 }
@@ -248,7 +286,7 @@ Portfolio Style Start Here
   height: 100vh;
   border: 0;
   border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-inner {
   overflow: initial;
@@ -258,12 +296,14 @@ Portfolio Style Start Here
   border: 7px solid #fff;
 }
 .portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-inner .carousel-item .carousel-caption {
-  bottom: -50px;
+  right: 10%;
+  left: 10%;
+  bottom: -40px;
   text-align: left;
   border-radius: 1rem;
   color: #4b4b4b;
   background-color: #fff;
-  box-shadow: 5px 6px 10px 0px #797070;
+  box-shadow: 5px 6px 10px 0px #3a2e2e;
 }
 .portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-inner .carousel-item .carousel-caption img {
   border-radius: 1rem;
@@ -281,10 +321,6 @@ Portfolio Style Start Here
   height: initial;
   background-image: none;
 }
-.portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-control-next-icon i, .portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-control-prev-icon i {
-  color: #0071bc;
-  font-size: 90px;
-}
 
 /*------------------------
 Portfolio Style End Here
@@ -294,17 +330,21 @@ Quote Style Start Here
 ---------------------*/
 .quote-section {
   background: url("../img/bg-map.jpg") no-repeat center center;
-  padding: 120px 0;
+  padding: 100px 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .quote-section .card {
+  border-radius: 1rem;
   border-color: #29abe2;
 }
 .quote-section .card .card-img-top {
   width: 150px;
+}
+.quote-section .card .card-body {
+  font-size: 20px;
 }
 .quote-section .card .card-body .card-title {
   font-size: 1.65rem;
@@ -314,6 +354,10 @@ Quote Style Start Here
   .quote-section .card {
     height: 100%;
   }
+}
+.quote-section .btn-quote {
+  font-size: 30px;
+  padding: 0.2rem 3rem;
 }
 
 /*-------------------
@@ -329,7 +373,8 @@ footer {
   background-color: #1a1a1a;
 }
 footer .footer-title {
-  font-size: 3rem;
+  font-weight: 900;
+  font-size: 3.5rem;
 }
 footer .footer-description {
   font-weight: 300;
@@ -362,6 +407,9 @@ footer .social-nav .social-links {
   padding: 5px 0;
 }
 footer .social-nav .social-links a {
+  color: #e6e6e6;
+}
+footer .social-nav .social-links a:hover {
   color: #0071bc;
 }
 @media (min-width: 576px) {
@@ -386,7 +434,7 @@ About Page Style Start Here
 }
 .about-page .about-page-section-one {
   background: url("../img/bg-about-section-1.jpg") no-repeat center center;
-  padding: 120px 0;
+  padding: 100px 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -401,7 +449,7 @@ About Page Style Start Here
 }
 .about-page .about-page-section-two {
   background: url("../img/bg-about-section-2.jpg") no-repeat center center;
-  padding: 120px 0;
+  padding: 100px 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -410,12 +458,12 @@ About Page Style Start Here
 .about-page .about-page-section-two .vertical-text {
   font-size: 40px;
   margin-top: 11rem;
-  font-family: "Aachen BT";
+  font-family: "Aachen BT Roman";
   transform: rotate(-90deg);
 }
 .about-page .about-page-section-three {
   background: url("../img/bg-about-section-3.jpg") no-repeat center center;
-  padding: 120px 0;
+  padding: 100px 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -443,16 +491,23 @@ About Page Style Start Here
   justify-content: center;
   border: 2px solid #fff;
 }
+.about-page .about-page-section-three .founding-year h1 {
+  font-size: 55px;
+}
+.about-page .about-page-section-three .founding-year h3 {
+  font-size: 28px;
+  font-weight: 300;
+}
 .about-page .about-page-section-four {
   background: url("../img/bg-map.jpg") no-repeat center center fixed;
-  padding: 120px 0;
+  padding: 100px 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .about-page .about-page-section-four h1 {
-  font-size: 55px;
+  font-size: 65px;
 }
 
 /*------------------------
@@ -466,7 +521,7 @@ Contact Page Style Start Here
 }
 .quote-page .contact-page-section-one {
   background: url("../img/bg-contact-page-section-1.jpg") no-repeat center center;
-  padding: 120px 0;
+  padding: 100px 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -499,14 +554,14 @@ Contact Page Style Start Here
 }
 .quote-page .contact-page-section-two {
   background: url("../img/bg-contact-page-section-2.jpg") no-repeat center center;
-  padding: 120px 0;
+  padding: 100px 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .quote-page .contact-page-section-two .social-medias .single-media {
-  padding: 0 30px;
+  padding: 0 35px;
   border-right: 1px solid #999999;
 }
 .quote-page .contact-page-section-two .social-medias .single-media:last-child {
@@ -514,7 +569,7 @@ Contact Page Style Start Here
 }
 .quote-page .contact-page-section-two .social-medias .single-media i {
   color: #999999;
-  font-size: 50px;
+  font-size: 55px;
   transition: all 0.35s ease-in-out;
 }
 .quote-page .contact-page-section-two .social-medias .single-media i:hover {

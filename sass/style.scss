@@ -8,6 +8,16 @@
 }
 
 @font-face {
+  font-family: 'Aachen BT Roman';
+  src: url('../fonts/aachen_bt.ttf');
+}
+
+@font-face {
+  font-family: 'Aachen BT';
+  src: url('../fonts/Aachen BT Bold font.ttf');
+}
+
+@font-face {
   font-family: 'Arrus BT';
   src: url('../fonts/bitstream arrus bt.ttf');
 }
@@ -28,6 +38,10 @@ a {
 
 .font-achanbt {
   font-family: 'Aachen BT';
+}
+
+.font-achanbt-regular {
+  font-family: 'Aachen BT Roman';
 }
 
 .font-arrusbt {
@@ -54,6 +68,18 @@ a {
   font-size: 40px;
 }
 
+.font-size-55 {
+  font-size: 55px;
+}
+
+.font-size-50 {
+  font-size: 50px;
+}
+
+.font-size-28 {
+  font-size: 28px;
+}
+
 .brand-text {
   color: $brand-color;
 }
@@ -74,7 +100,7 @@ a {
   border: 2px solid;
   font-weight: 600;
   font-size: 1.2rem;
-  padding: 0.35rem 1.5rem;
+  padding: 0.45rem 1.7rem;
   border-radius: $default-button-radius;
   transition: color .2s $transition-timing-function,
   background-color .2s $transition-timing-function,
@@ -82,7 +108,7 @@ a {
   box-shadow .2s $transition-timing-function;
 
   &.white {
-    color: $black;
+    color: #1a1a1a;
     border-color: $white;
     background-color: $white;
 
@@ -115,8 +141,12 @@ a {
   box-shadow: 5px 6px 10px 0px #1e1a1a;
 }
 
+.text-shadow {
+  text-shadow: 2px 1px 3px rgba(0,0,0,0.5);
+}
+
 @mixin section-style {
-  padding: 120px 0;
+  padding: 100px 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -159,43 +189,33 @@ header {
       .nav-item {
         .nav-link {
           font-weight: 600;
-          padding: 0.18rem 1.5rem;
+          padding: 0.01rem 0.6rem;
           color: lighten($black, 10%);
           transition: all $transition-duration $transition-timing-function;
 
           &.quote {
             color: $white;
-            background-color: #25a7e0;
-            border: 2px solid #25a7e0;
+            margin-left: 1rem;
             border-radius: $default-button-radius;
-            transition: color .2s $transition-timing-function,
-            background-color .2s $transition-timing-function,
-            border-color .2s $transition-timing-function;
+            background: linear-gradient(to right, #24a4dd, #0477c0);
+            background: -webkit-linear-gradient(to right, #24a4dd, #0477c0);
+            transition: background $transition-duration $transition-timing-function;
             &:hover {
-              color: #25a7e0;
-              background-color: transparent;
+              background: linear-gradient(to right, #2091c2, #0567a5);
+              background: -webkit-linear-gradient(to right, #2091c2, #0567a5);
             }
           }
 
           &.quote-with-fiverr {
             color: $white;
-            margin-left: 1.5rem;
-            background-color: #87c540;
-            border: 2px solid #87c540;
+            margin-left: 1rem;
             border-radius: $default-button-radius;
-            transition: color .2s $transition-timing-function,
-            background-color .2s $transition-timing-function,
-            border-color .2s $transition-timing-function;
+            background: linear-gradient(to right, #83c440, #46b848);
+            background: -webkit-linear-gradient(to right, #83c440, #46b848);
+            transition: background $transition-duration $transition-timing-function;
             &:hover {
-              color: #87c540;
-              background-color: transparent;
-            }
-          }
-
-          &.active {
-            span {
-              color: $brand-color;
-              border-bottom: 2px solid $brand-color;
+              background: linear-gradient(to right, #70a136, #338735);
+              background: -webkit-linear-gradient(to right, #70a136, #338735);;
             }
           }
         }
@@ -207,8 +227,8 @@ header {
             margin-left: 0;
             display: inline-block;
 
-            &.quote {
-              margin-left: 1.5rem;
+            &.quote, &.quote-with-fiverr {
+              margin-left: 0.6rem;
               margin-bottom: 0.7rem;
             }
           }
@@ -238,12 +258,16 @@ Main Banner Style Start Here
   background: url("../img/main-banner-bg.jpg") no-repeat center center;
   @include section-style;
 
-  h1 {
-    font-size: 6vw;
+  h1.big-thing {
+    font-size: 7.6vw;
     font-family: 'Aachen BT';
   }
-}
 
+  .btn-view-our-work {
+    font-size: 30px;
+    padding: 0.2rem 3rem;
+  }
+}
 /*--------------------------
 Main Banner Style end Here
 --------------------------*/
@@ -255,12 +279,18 @@ Company Overview Style Start Here
   background: url("../img/bg-company-overview.jpg") no-repeat center center;
   @include section-style;
 
+  .years-of-brilliance {
+    font-size: 30px;
+    padding: 0.2rem 3rem;
+  }
+
   h1 {
-    font-size: 40px;
-    font-family: 'Aachen BT';
+    font-size: 50px;
+    font-family: 'Aachen BT Roman';
   }
 
   h6 {
+    font-size: 20px;
     font-family: 'Arrus BT';
   }
 }
@@ -285,6 +315,11 @@ Portfolio Style Start Here
     }
   }
 
+  .btn-portfolio {
+    font-size: 30px;
+    padding: 0.2rem 3rem;
+  }
+
   .portfolio-modal {
     .modal-dialog {
       max-width: 100vw;
@@ -293,7 +328,7 @@ Portfolio Style Start Here
         height: 100vh;
         border: 0;
         border-radius: 0;
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: rgba(255, 255, 255, 0.2);
 
         .carousel {
           .carousel-inner {
@@ -306,12 +341,14 @@ Portfolio Style Start Here
               }
 
               .carousel-caption {
-                bottom: -50px;
+                right: 10%;
+                left: 10%;
+                bottom: -40px;
                 text-align: left;
                 border-radius: 1rem;
                 color: $secondary-color;
                 background-color: $white;
-                box-shadow: 5px 6px 10px 0px #797070;
+                box-shadow: 5px 6px 10px 0px #3a2e2e;
                 img {
                   border-radius: 1rem;
                 }
@@ -333,11 +370,6 @@ Portfolio Style Start Here
             width: initial;
             height: initial;
             background-image: none;
-
-            i {
-              color: $brand-color;
-              font-size: 90px;
-            }
           }
         }
       }
@@ -356,6 +388,7 @@ Quote Style Start Here
   @include section-style;
 
   .card {
+    border-radius: 1rem;
     border-color: $primary-color;
 
     .card-img-top {
@@ -363,6 +396,7 @@ Quote Style Start Here
     }
 
     .card-body {
+      font-size: 20px;
       .card-title {
         font-size: 1.65rem;
         color: $primary-color;
@@ -372,6 +406,11 @@ Quote Style Start Here
     @media (min-width: 767px) {
       height: 100%;
     }
+  }
+
+  .btn-quote {
+    font-size: 30px;
+    padding: 0.2rem 3rem;
   }
 }
 
@@ -390,7 +429,8 @@ footer {
   background-color: #1a1a1a;
 
   .footer-title {
-    font-size: 3rem;
+    font-weight: 900;
+    font-size: 3.5rem;
   }
 
   .footer-description {
@@ -431,7 +471,11 @@ footer {
     .social-links {
       padding: 5px 0;
       a {
-        color: $brand-color;
+        color: #e6e6e6;
+
+        &:hover {
+          color: $brand-color;
+        }
       }
       @media (min-width: 576px) {
         border-left: 1px solid $white;
@@ -472,7 +516,7 @@ About Page Style Start Here
     .vertical-text {
       font-size: 40px;
       margin-top: 11rem;
-      font-family: 'Aachen BT';
+      font-family: 'Aachen BT Roman';
       transform: rotate(-90deg);
     }
   }
@@ -504,6 +548,15 @@ About Page Style Start Here
           border: 2px solid $white;
         }
       }
+
+      h1 {
+        font-size: 55px;
+      }
+
+      h3 {
+        font-size: 28px;
+        font-weight: 300;
+      }
     }
   }
 
@@ -511,7 +564,7 @@ About Page Style Start Here
     background: url("../img/bg-map.jpg") no-repeat center center fixed;
     @include section-style;
     h1 {
-      font-size: 55px;
+      font-size: 65px;
     }
   }
 }
@@ -575,7 +628,7 @@ Contact Page Style Start Here
 
     .social-medias {
       .single-media {
-        padding: 0 30px;
+        padding: 0 35px;
         border-right: 1px solid #999999;
 
         &:last-child {
@@ -584,7 +637,7 @@ Contact Page Style Start Here
 
         i {
           color: #999999;
-          font-size: 50px;
+          font-size: 55px;
           transition: all $transition-duration $transition-timing-function;
 
           &:hover {
