@@ -107,6 +107,10 @@ a {
   }
 }
 
+.custom-shadow {
+  box-shadow: 5px 6px 10px 0px lighten($secondary-color, 10%) !important;
+}
+
 @mixin section-style {
   padding: 120px 0;
   -webkit-background-size: cover;
@@ -239,10 +243,6 @@ Company Overview Style Start Here
 
   h6 {
     font-family: 'Arrus BT';
-  }
-
-  .btn {
-    box-shadow: 5px 6px 10px 0px lighten($secondary-color, 10%);
   }
 }
 

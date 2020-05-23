@@ -96,6 +96,10 @@ a {
   background-color: #177da8;
 }
 
+.custom-shadow {
+  box-shadow: 5px 6px 10px 0px #656565 !important;
+}
+
 /*---------------------
 Header Style Start Here
 ---------------------*/
@@ -197,9 +201,6 @@ Company Overview Style Start Here
 }
 .company-overview h6 {
   font-family: "Arrus BT";
-}
-.company-overview .btn {
-  box-shadow: 5px 6px 10px 0px #656565;
 }
 
 /*-------------------------------
