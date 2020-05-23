@@ -100,6 +100,10 @@ a {
   box-shadow: 5px 6px 10px 0px #656565 !important;
 }
 
+.custom-shadow-2 {
+  box-shadow: 5px 6px 10px 0px #1e1a1a;
+}
+
 /*---------------------
 Header Style Start Here
 ---------------------*/
@@ -219,6 +223,7 @@ Portfolio Style Start Here
 }
 .portfolio .card {
   background-color: #f2f2f2;
+  box-shadow: 5px 6px 10px 0px #1e1a1a;
 }
 .portfolio .card .card-body {
   font-size: 18px;
