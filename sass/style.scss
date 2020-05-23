@@ -34,6 +34,10 @@ a {
   font-family: 'Arrus BT';
 }
 
+.font-roboto {
+  font-family: Roboto;
+}
+
 .font-weight-200 {
   font-weight: 200;
 }
@@ -236,6 +240,10 @@ Company Overview Style Start Here
   h6 {
     font-family: 'Arrus BT';
   }
+
+  .btn {
+    box-shadow: 5px 6px 10px 0px lighten($secondary-color, 10%);
+  }
 }
 
 /*-------------------------------
@@ -280,7 +288,6 @@ Portfolio Style Start Here
 
               .carousel-caption {
                 bottom: -50px;
-                padding: 20px;
                 text-align: left;
                 border-radius: 0.5rem;
                 color: $secondary-color;

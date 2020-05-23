@@ -30,6 +30,10 @@ a {
   font-family: "Arrus BT";
 }
 
+.font-roboto {
+  font-family: Roboto;
+}
+
 .font-weight-200 {
   font-weight: 200;
 }
@@ -194,6 +198,9 @@ Company Overview Style Start Here
 .company-overview h6 {
   font-family: "Arrus BT";
 }
+.company-overview .btn {
+  box-shadow: 5px 6px 10px 0px #656565;
+}
 
 /*-------------------------------
 Company Overview Style End Here
@@ -234,7 +241,6 @@ Portfolio Style Start Here
 }
 .portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-inner .carousel-item .carousel-caption {
   bottom: -50px;
-  padding: 20px;
   text-align: left;
   border-radius: 0.5rem;
   color: #4b4b4b;
