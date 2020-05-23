@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("../css/icofont.css");
+@font-face {
+  font-family: "Aachen BT";
+  src: url("../fonts/Aachen BT Bold font.ttf");
+}
+@font-face {
+  font-family: "Arrus BT";
+  src: url("../fonts/bitstream arrus bt.ttf");
+}
+body {
+  line-height: 1.7;
+  padding-top: 93px;
+  position: relative;
+  letter-spacing: 0.6px;
+  font-family: "Arrus BT";
+}
+
+a {
+  color: #29abe2;
+  text-decoration: none !important;
+  transition: all 0.35s ease-in-out;
+}
+
+.font-achanbt {
+  font-family: "Aachen BT";
+}
+
+.font-arrusbt {
+  font-family: "Arrus BT";
+}
+
+.font-weight-200 {
+  font-weight: 200;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-size-40 {
+  font-size: 40px;
+}
+
+.brand-text {
+  color: #0071bc;
+}
+
+.primary-text {
+  color: #29abe2;
+}
+
+.secondary-text {
+  color: #4b4b4b;
+}
+
+.mb-primary {
+  margin-bottom: 1.5rem;
+}
+
+.btn-app {
+  border: 2px solid;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.35rem 1.5rem;
+  border-radius: 20px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.btn-app.white {
+  color: #000;
+  border-color: #fff;
+  background-color: #fff;
+}
+.btn-app.white:hover {
+  color: #fff;
+  background-color: transparent;
+}
+.btn-app.app-color {
+  color: #fff;
+  border: 0;
+  background: #0477c0;
+  box-shadow: 0 20px 40px 0 rgba(18, 193, 162, 0.15);
+  background: linear-gradient(to right, #24a4dd, #0477c0);
+  background: -webkit-linear-gradient(to right, #24a4dd, #0477c0);
+}
+.btn-app.app-color:hover {
+  box-shadow: none;
+  background-color: #177da8;
+}
+
+/*---------------------
+Header Style Start Here
+---------------------*/
+header .navbar {
+  background-color: #fff;
+  transition: all 0.35s ease-in-out;
+}
+header .navbar .navbar-brand img {
+  transition: all 0.35s ease-in-out;
+}
+header .navbar .navbar-toggler {
+  color: #0071bc;
+}
+header .navbar .navbar-toggler:focus {
+  outline: none;
+}
+header .navbar.navbar-fixed-top {
+  box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.06);
+}
+header .navbar.navbar-fixed-top .navbar-brand img {
+  width: 250px;
+}
+header .navbar .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  padding: 0.35rem 1.5rem;
+  color: #1a1a1a;
+  transition: all 0.35s ease-in-out;
+}
+header .navbar .navbar-nav .nav-item .nav-link.quote {
+  color: #fff;
+  background-color: #25a7e0;
+  border-radius: 20px;
+}
+header .navbar .navbar-nav .nav-item .nav-link.quote-with-fiverr {
+  color: #fff;
+  margin-left: 1.5rem;
+  background-color: #87c540;
+  border-radius: 20px;
+}
+header .navbar .navbar-nav .nav-item .nav-link.active span {
+  color: #0071bc;
+  border-bottom: 2px solid #0071bc;
+}
+@media (max-width: 991px) {
+  header .navbar .navbar-nav .nav-item .nav-link {
+    margin-left: 0;
+    display: inline-block;
+  }
+  header .navbar .navbar-nav .nav-item .nav-link.quote {
+    margin-left: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+}
+@media (min-width: 576px) {
+  header .navbar {
+    padding: 1.2rem 0;
+  }
+  header .navbar.navbar-fixed-top {
+    padding: 10px;
+  }
+}
+
+/*---------------------
+Header Style End Here
+---------------------*/
+/*--------------------------
+Main Banner Style Start Here
+--------------------------*/
+.main-banner {
+  background: url("../img/main-banner-bg.jpg") no-repeat center center;
+  padding: 120px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main-banner h1 {
+  font-size: 6vw;
+  font-family: "Aachen BT";
+}
+
+/*--------------------------
+Main Banner Style end Here
+--------------------------*/
+/*-------------------------------
+Company Overview Style Start Here
+-------------------------------*/
+.company-overview {
+  background: url("../img/bg-company-overview.jpg") no-repeat center center;
+  padding: 120px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.company-overview h1 {
+  font-size: 40px;
+  font-family: "Aachen BT";
+}
+.company-overview h6 {
+  font-family: "Arrus BT";
+}
+
+/*-------------------------------
+Company Overview Style End Here
+-------------------------------*/
+/*------------------------
+Portfolio Style Start Here
+------------------------*/
+.portfolio {
+  background: url("../img/bg-portfolio.jpg") no-repeat center center fixed;
+  padding: 120px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.portfolio .card {
+  background-color: #f2f2f2;
+}
+.portfolio .card .card-body {
+  font-size: 18px;
+  font-family: Roboto;
+}
+.portfolio .portfolio-modal .modal-dialog {
+  max-width: 100vw;
+}
+.portfolio .portfolio-modal .modal-dialog .modal-content {
+  height: 100vh;
+  border: 0;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-inner {
+  overflow: initial;
+}
+.portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-inner .carousel-item img {
+  border-radius: 0.25rem;
+  border: 5px solid #fff;
+}
+.portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-inner .carousel-item .carousel-caption {
+  bottom: -50px;
+  padding: 20px;
+  text-align: left;
+  border-radius: 0.5rem;
+  color: #4b4b4b;
+  background-color: #fff;
+  box-shadow: 0 20px 40px 0 rgba(18, 193, 162, 0.15);
+}
+.portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-control-prev {
+  right: 100%;
+  left: initial;
+}
+.portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-control-next {
+  right: initial;
+  left: 100%;
+}
+.portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-control-next-icon, .portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-control-prev-icon {
+  width: initial;
+  height: initial;
+  background-image: none;
+}
+.portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-control-next-icon i, .portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-control-prev-icon i {
+  color: #0071bc;
+  font-size: 90px;
+}
+
+/*------------------------
+Portfolio Style End Here
+------------------------*/
+/*--------------------
+Quote Style Start Here
+---------------------*/
+.quote-section {
+  background: url("../img/bg-map.jpg") no-repeat center center;
+  padding: 120px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.quote-section .card {
+  border-color: #29abe2;
+}
+.quote-section .card .card-img-top {
+  width: 150px;
+}
+.quote-section .card .card-body .card-title {
+  font-size: 1.65rem;
+  color: #29abe2;
+}
+@media (min-width: 767px) {
+  .quote-section .card {
+    height: 100%;
+  }
+}
+
+/*-------------------
+Quote Style End Here
+-------------------*/
+/*---------------------
+Footer Style Start Here
+---------------------*/
+footer {
+  color: #e6e6e6;
+  padding: 40px 0;
+  font-family: Roboto;
+  background-color: #1a1a1a;
+}
+footer .footer-title {
+  font-size: 3rem;
+}
+footer .footer-description {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+footer .footer-chat {
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 300;
+  border: 1px solid #fff;
+}
+footer .footer-chat a {
+  color: #e6e6e6;
+}
+footer .footer-chat a:hover {
+  color: #0071bc;
+}
+@media (min-width: 767px) {
+  footer .footer-chat span img {
+    padding: 0 20px;
+  }
+  footer .footer-chat span img:first-child {
+    padding-left: 0;
+  }
+  footer .footer-chat span img:last-child {
+    padding-right: 0;
+  }
+}
+footer .social-nav .social-links {
+  padding: 5px 0;
+}
+footer .social-nav .social-links a {
+  color: #0071bc;
+}
+@media (min-width: 576px) {
+  footer .social-nav .social-links {
+    border-left: 1px solid #fff;
+  }
+}
+@media (min-width: 576px) {
+  footer .social-nav {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+/*---------------------
+Footer Style End Here
+---------------------*/
+/*------------------------
+About Page Style Start Here
+------------------------*/
+.about-page {
+  font-family: Roboto;
+}
+.about-page .about-page-section-one {
+  background: url("../img/bg-about-section-1.jpg") no-repeat center center;
+  padding: 120px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.about-page .about-page-section-one h1 {
+  font-size: 3rem;
+}
+.about-page .about-page-section-one h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.about-page .about-page-section-two {
+  background: url("../img/bg-about-section-2.jpg") no-repeat center center;
+  padding: 120px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.about-page .about-page-section-two .vertical-text {
+  font-size: 40px;
+  margin-top: 11rem;
+  font-family: "Aachen BT";
+  transform: rotate(-90deg);
+}
+.about-page .about-page-section-three {
+  background: url("../img/bg-about-section-3.jpg") no-repeat center center;
+  padding: 120px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.about-page .about-page-section-three .founding-year {
+  margin-bottom: 140px;
+}
+.about-page .about-page-section-three .founding-year .card-1 {
+  width: 185px;
+  height: 185px;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid #29abe2;
+}
+.about-page .about-page-section-three .founding-year .card-1 .card-2 {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  width: 165px;
+  height: 165px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #fff;
+}
+.about-page .about-page-section-four {
+  background: url("../img/bg-map.jpg") no-repeat center center fixed;
+  padding: 120px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.about-page .about-page-section-four h1 {
+  font-size: 55px;
+}
+
+/*------------------------
+About Page Style End Here
+------------------------*/
+/*---------------------------
+Contact Page Style Start Here
+---------------------------*/
+.quote-page {
+  font-family: Roboto;
+}
+.quote-page .contact-page-section-one {
+  background: url("../img/bg-contact-page-section-1.jpg") no-repeat center center;
+  padding: 120px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.quote-page .contact-page-section-one .quick-chat .chat-item {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #fff;
+}
+.quote-page .contact-page-section-one .quick-chat .chat-item i {
+  font-size: 40px;
+}
+.quote-page .contact-page-section-one .contact-form .form-control {
+  border-radius: 3px;
+  border-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.quote-page .contact-page-section-one .contact-form .input-group .form-control {
+  color: #000;
+  border-radius: 3px 0 0 3px;
+}
+.quote-page .contact-page-section-one .contact-form .input-group .input-group-append .input-group-text {
+  border: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.quote-page .contact-page-section-one .contact-form .btn {
+  border-radius: 3px;
+}
+.quote-page .contact-page-section-two {
+  background: url("../img/bg-contact-page-section-2.jpg") no-repeat center center;
+  padding: 120px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.quote-page .contact-page-section-two .social-medias .single-media {
+  padding: 0 30px;
+  border-right: 1px solid #999999;
+}
+.quote-page .contact-page-section-two .social-medias .single-media:last-child {
+  border-right: 0;
+}
+.quote-page .contact-page-section-two .social-medias .single-media i {
+  color: #999999;
+  font-size: 50px;
+  transition: all 0.35s ease-in-out;
+}
+.quote-page .contact-page-section-two .social-medias .single-media i:hover {
+  color: #29abe2;
+}
+
+/*-------------------------
+Contact Page Style End Here
+-------------------------*/
+
+/*# sourceMappingURL=style.css.map */
