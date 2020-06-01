@@ -381,6 +381,32 @@ Portfolio Style Start Here
       }
     }
   }
+
+  @media (min-width: 576px) {
+    .carousel-inner-wrapper {
+      width: 70%;
+    }
+  }
+  @media (min-width: 768px) {
+    .carousel-inner-wrapper {
+      width: 60%;
+    }
+  }
+  @media (min-width: 992px) {
+    .carousel-inner-wrapper {
+      width: 40%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .carousel-inner-wrapper {
+      width: 40%;
+    }
+  }
+  @media (max-width: 575px) {
+    .carousel-inner-wrapper {
+      width: 100%;
+    }
+  }
 }
 
 /*------------------------
@@ -481,9 +507,15 @@ footer {
 
       a {
         color: #e6e6e6;
+        padding: 0 10px;
+        border-right: 1px solid $white;
 
         &:hover {
           color: $brand-color;
+        }
+
+        &:last-child {
+          border-right: 0;
         }
       }
 
@@ -634,6 +666,16 @@ Contact Page Style Start Here
       .btn {
         border-radius: 3px;
       }
+
+      .custom-file {
+        .custom-file-label {
+          background-color: rgba(255, 255, 255, 0.6);
+          &::after {
+            content: "Attach";
+            background-color: rgba(255, 255, 255, 0.6);
+          }
+        }
+      }
     }
   }
 
@@ -648,6 +690,7 @@ Contact Page Style Start Here
 
         &:last-child {
           border-right: 0;
+          margin-bottom: 0;
         }
 
         i {
@@ -659,6 +702,11 @@ Contact Page Style Start Here
             color: $primary-color;
           }
         }
+
+        @media (max-width: 575px) {
+          margin-bottom: 30px;
+          border-right: 0;
+        }
       }
     }
   }
@@ -667,3 +715,57 @@ Contact Page Style Start Here
 /*-------------------------
 Contact Page Style End Here
 -------------------------*/
+
+/*---------------
+Mobile Responsive
+---------------*/
+@media (max-width: 575px) {
+  body {
+    padding-top: 64px;
+  }
+  .navbar-fixed-top {
+    padding: .5rem 1rem;
+  }
+  .navbar-brand {
+    img {
+      width: 250px;
+    }
+  }
+  .main-banner {
+    h1 {
+      &.big-thing {
+        font-size: 16.5vw;
+      }
+      &.font-size-50 {
+        font-size: 45px;
+      }
+    }
+  }
+  .portfolio {
+    .portfolio-modal {
+      .modal-dialog {
+        .modal-content {
+          .carousel {
+            .carousel-control-prev, .carousel-control-next {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-page-section-two {
+    .vertical-text {
+      margin-top: 15.5rem !important;
+    }
+  }
+  footer {
+    .social-nav {
+      .social-links {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

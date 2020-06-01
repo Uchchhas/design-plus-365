@@ -33,25 +33,20 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6">
-                    <div class="text-center d-flex align-items-center justify-content-around h-100 social-links">
+                    <div class="text-center d-flex align-items-center justify-content-center h-100 social-links">
                         <a href="https://www.facebook.com/designplus365" target="_blank">
-                            <i class="icofont-facebook"></i>
                             <span class="d-block">Facebook</span>
                         </a>
                         <a href="https://twitter.com/designplus365" target="_blank">
-                            <i class="icofont-twitter"></i>
                             <span class="d-block">Twitter</span>
                         </a>
                         <a href="https://www.instagram.com/designplus365/" target="_blank">
-                            <i class="icofont-instagram"></i>
                             <span class="d-block">Instagram</span>
                         </a>
                         <a href="https://www.pinterest.com/designplus365/" target="_blank">
-                            <i class="icofont-pinterest"></i>
                             <span class="d-block">Pinterest</span>
                         </a>
                         <a href="https://www.pinterest.com/designplus365/" target="_blank">
-                            <i class="icofont-linkedin"></i>
                             <span class="d-block">Linked</span>
                         </a>
                     </div>

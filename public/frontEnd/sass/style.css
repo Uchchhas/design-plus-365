@@ -321,6 +321,31 @@ Portfolio Style Start Here
   height: initial;
   background-image: none;
 }
+@media (min-width: 576px) {
+  .portfolio .carousel-inner-wrapper {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .portfolio .carousel-inner-wrapper {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .portfolio .carousel-inner-wrapper {
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio .carousel-inner-wrapper {
+    width: 40%;
+  }
+}
+@media (max-width: 575px) {
+  .portfolio .carousel-inner-wrapper {
+    width: 100%;
+  }
+}
 
 /*------------------------
 Portfolio Style End Here
@@ -408,9 +433,14 @@ footer .social-nav .social-links {
 }
 footer .social-nav .social-links a {
   color: #e6e6e6;
+  padding: 0 10px;
+  border-right: 1px solid #fff;
 }
 footer .social-nav .social-links a:hover {
   color: #0071bc;
+}
+footer .social-nav .social-links a:last-child {
+  border-right: 0;
 }
 @media (min-width: 576px) {
   footer .social-nav .social-links {
@@ -552,6 +582,13 @@ Contact Page Style Start Here
 .quote-page .contact-page-section-one .contact-form .btn {
   border-radius: 3px;
 }
+.quote-page .contact-page-section-one .contact-form .custom-file .custom-file-label {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.quote-page .contact-page-section-one .contact-form .custom-file .custom-file-label::after {
+  content: "Attach";
+  background-color: rgba(255, 255, 255, 0.6);
+}
 .quote-page .contact-page-section-two {
   background: url("../img/bg-contact-page-section-2.jpg") no-repeat center center;
   padding: 100px 0;
@@ -566,6 +603,7 @@ Contact Page Style Start Here
 }
 .quote-page .contact-page-section-two .social-medias .single-media:last-child {
   border-right: 0;
+  margin-bottom: 0;
 }
 .quote-page .contact-page-section-two .social-medias .single-media i {
   color: #999999;
@@ -575,9 +613,50 @@ Contact Page Style Start Here
 .quote-page .contact-page-section-two .social-medias .single-media i:hover {
   color: #29abe2;
 }
+@media (max-width: 575px) {
+  .quote-page .contact-page-section-two .social-medias .single-media {
+    margin-bottom: 30px;
+    border-right: 0;
+  }
+}
 
 /*-------------------------
 Contact Page Style End Here
 -------------------------*/
+/*---------------
+Mobile Responsive
+---------------*/
+@media (max-width: 575px) {
+  body {
+    padding-top: 64px;
+  }
+
+  .navbar-fixed-top {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-brand img {
+    width: 250px;
+  }
+
+  .main-banner h1.big-thing {
+    font-size: 16.5vw;
+  }
+  .main-banner h1.font-size-50 {
+    font-size: 45px;
+  }
+
+  .portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-control-prev, .portfolio .portfolio-modal .modal-dialog .modal-content .carousel .carousel-control-next {
+    display: none;
+  }
+
+  .about-page-section-two .vertical-text {
+    margin-top: 15.5rem !important;
+  }
+
+  footer .social-nav .social-links a {
+    font-size: 12px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

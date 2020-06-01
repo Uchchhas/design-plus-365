@@ -98,12 +98,11 @@ Home | Designplus365
                                 aria-label="Close">
                             <i class="icofont-close-line"></i>
                         </button>
-                        <div class="row justify-content-center align-items-center h-100">
-                            <div class="col-11 col-sm-8 col-md-6">
+                        <div class="d-flex justify-content-center align-items-center h-100 w-100">
+                            <div class="carousel-inner-wrapper">
                                 <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
                                     <div class="carousel-inner">
                                         <div id="sliders_data"></div>
-                                        
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true">
@@ -118,7 +117,6 @@ Home | Designplus365
                                         <span class="sr-only">Next</span>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -185,7 +183,6 @@ Home | Designplus365
 
 
 function getCategoryId(categoryId){
-	
 		//$('#sliders_data').remove();
 		$.ajax({
 			url: "searchcategoryid?categoryId=" + categoryId ,
@@ -196,11 +193,7 @@ function getCategoryId(categoryId){
 				 $('#sliders_data').html(data.output);
 			}
 		})
-	
-	
-	
 }
- 
 </script>
     
 
