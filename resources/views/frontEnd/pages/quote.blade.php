@@ -23,7 +23,7 @@
                         </h5>
                         <h5 class="text-white font-weight-normal wow animate__animated animate__fadeInUp mt-4 mb-3">
                             QUICK CHAT:</h5>
-                        <div class="quick-chat d-flex justify-content-between">
+                        <div class="quick-chat d-flex justify-content-between mb-3 mb-sm-0 mb-md-0">
                             <div class="chat-item text-center d-flex flex-column justify-content-center wow animate__animated animate__fadeInUp"
                                  data-wow-delay="0.1s">
                                 <a href="https://wa.me/01707334429" target="_blank" class="text-white">
@@ -358,7 +358,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <div class="input-group wow animate__animated animate__fadeInUp"
+                                    <div class="form-group input-group wow animate__animated animate__fadeInUp"
                                          data-wow-delay="0.4s">
                                         <input type="number" name="budget" class="form-control" placeholder="Budget">
                                         <div class="input-group-append">
@@ -378,7 +378,7 @@
                                          data-wow-delay="0.5s">
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="customFile" name="files[]" accept="file_extension|image/*|media_type" multiple>
-                                            <label class="custom-file-label" for="customFile">Choose image file...</label>
+                                            <label class="custom-file-label" for="customFile">Choose file...</label>
                                         </div>
                                     </div>
                                 </div>

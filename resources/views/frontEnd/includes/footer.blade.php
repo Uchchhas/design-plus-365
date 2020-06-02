@@ -12,6 +12,35 @@
                 amazon product images design and offering excellent customer services.
             </h6>
         </div>
+        <div class="text-center currency-wrapper">
+            <h2>We are accepting the currency</h2>
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="d-flex align-items-center currency">
+                    <img src="{{ asset('frontEnd/img/flag-us.png')}}" class="img-fluid mr-1" width="25" alt=""> $
+                </div>
+                <div class="d-flex align-items-center currency">
+                    <img src="{{ asset('frontEnd/img/flag-urope.png')}}" class="img-fluid mr-1" width="25" alt=""> €
+                </div>
+                <div class="d-flex align-items-center currency">
+                    <img src="{{ asset('frontEnd/img/flag-uk.png')}}" class="img-fluid mr-1" width="25" alt=""> £
+                </div>
+                <div class="d-flex align-items-center currency">
+                    <img src="{{ asset('frontEnd/img/flag-australia.png')}}" class="img-fluid mr-1" width="25" alt=""> AU$
+                </div>
+                <div class="d-flex align-items-center currency">
+                    <img src="{{ asset('frontEnd/img/flag-canada.png')}}" class="img-fluid mr-1" width="25" alt=""> CA$
+                </div>
+                <div class="d-flex align-items-center currency">
+                    <img src="{{ asset('frontEnd/img/flag-china.png')}}" class="img-fluid mr-1" width="25" alt=""> ¥
+                </div>
+                <div class="d-flex align-items-center currency">
+                    <img src="{{ asset('frontEnd/img/flag-japan.png')}}" class="img-fluid mr-1" width="25" alt=""> JP¥
+                </div>
+                <div class="d-flex align-items-center currency">
+                    <img src="{{ asset('frontEnd/img/flag-mexico.png')}}" class="img-fluid mr-1" width="25" alt=""> MEX$
+                </div>
+            </div>
+        </div>
         <div class="d-flex align-items-center justify-content-around flex-column flex-sm-row text-uppercase mt-4 footer-chat">
             <a href="https://www.whatsapp.com/" target="_blank">
                 whatsapp

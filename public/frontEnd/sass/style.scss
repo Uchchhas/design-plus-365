@@ -472,6 +472,24 @@ footer {
     font-size: 1.2rem;
   }
 
+  .currency-wrapper {
+    h2 {
+      color: #01C5C5;
+    }
+    .currency {
+      color: #D6851E;
+      font-size: 22px;
+      font-weight: 900;
+      padding: 0 12px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
   .footer-chat {
     padding: 5px;
     font-size: 25px;

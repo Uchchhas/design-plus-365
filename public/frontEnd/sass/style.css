@@ -405,6 +405,21 @@ footer .footer-description {
   font-weight: 300;
   font-size: 1.2rem;
 }
+footer .currency-wrapper h2 {
+  color: #01C5C5;
+}
+footer .currency-wrapper .currency {
+  color: #D6851E;
+  font-size: 22px;
+  font-weight: 900;
+  padding: 0 12px;
+}
+footer .currency-wrapper .currency:first-child {
+  padding-left: 0;
+}
+footer .currency-wrapper .currency:last-child {
+  padding-right: 0;
+}
 footer .footer-chat {
   padding: 5px;
   font-size: 25px;
